@@ -116,7 +116,7 @@ body {
 .card-image img {
   max-width: 500px;
   width: 100%;
-  height: auto%;
+  height: auto;
   object-fit: cover;
   display: block;
   border-radius: 0; /* Optional: remove corners on images inside card */

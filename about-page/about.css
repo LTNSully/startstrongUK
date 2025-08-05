@@ -1,0 +1,127 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(242, 233, 202);
+  color: black;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #222;
+  color: rgb(242, 233, 202);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: rgb(242, 233, 202);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* === Hero Section === */
+.about-hero {
+  background-color: #031e68;
+  color: rgb(242, 233, 202);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+/* === About Sections === */
+.about-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.about-section h2 {
+  color: black;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* === Team Section === */
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member img {
+  width: 180px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* === Footer === */
+footer {
+  background-color: #222;
+  color: rgb(242, 233, 202);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-member img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
